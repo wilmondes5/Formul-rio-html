@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em HTML</title>
+</head>
+<body>    
+    <form method="post" name="formulario" action="formulario.html">
+        <h1>Formulário</h1>
+        <p>Nome:<input type="text" name="nome"></p>
 
+        <p>Data de Nascimento:<input type="date" name="dataNascimento"></p>
+
+        <p>Sexo: <br> 
+        Masc:<input type="radio" name="sexo" value="m">
+        Femin:<input type="radio" name="sexo" value="f">
+        Prefiro não dizer: <input type="radio" name="sexo" value="pnd">
+        </p>
+        
+        <p>Endereço:<input type="text" name="endereco"></p>
+
+        <p>Logradouro:<input type="text" name="logradouro"></p>
+
+        <p>Bairro:<input type="text" name="bairro"></p>
+
+        <p>Cidade:<input type="text" name="cidade"></p>
+        
+        <p>UF:
+            <select name="uf">
+                <option value="df">Distrito Federal</option>
+                <option value="bh">Bahia</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+            </select>
+        </p>     
+
+        <p>E-mail:<input type="email" name="email"></p>
+       
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="limpar" value="Limpar">
+    </form>
+
+    <ul>
+         <li>
+            g. Nas tags de formulário para que serve o atributo "required"?            
+                <ul>
+                    <li>Esse é um atributo booleano usado para indicar que um 
+                    campo de formulário é obrigatório para o envio do mesmo. 
+                   Ao adicionar esse atributo a um campo de formulário, o 
+                   navegador obriga o usuário a inserir dados naquele campo 
+                   antes de enviar o formulário.</li>
+                </ul>    
+            </li>                 
+        <br>
+            <li>
+                h. Na tag <"form"> para que serve o atributo "action"?
+            </li> 
+                <ul>
+                    <li>O atributo action define o local (através de uma URL) 
+                        ao qual serão enviados todos os dados recolhidos do formulário.</li>
+                </ul>
+        <br>
+            <li>
+                i. Na tag <"form"> para que serve o atributo "method"?
+            </li>
+                <ul>                   
+                    <li> O  método HTTP que o navegador usa para enviar o formulário. Os valores possíveis são:<br>                       
+                    post: Corresponde ao método HTTP POST ; os dados do formulário são incluídos no corpo do 
+                    formulário e enviados ao servidor.<br>
+                    get: Corresponde ao método HTTP GET ; os dados do formulário são anexados ao actionatributo 
+                    URI, com um '?' como separador e o URI resultante é enviado ao servidor. Use este método 
+                    quando o formulário não tiver efeitos colaterais e contiver apenas caracteres ASCII.</li>
+                </ul>
+        <br>
+            <li>
+                j.Para que o valor digitado de uma senha não apareça na 
+                barra de endereços do navegador, qual deve ser o valor do 
+                atributo "method" na tag <"form">?
+            </li>
+                <ul>
+                    <li>Method post.</li>
+                </ul>
+        <br>
+            <li>
+                k. Qual valor deve ser informado no atributo "method" na tag <form> em um formulário que será
+                usado para fazer upload de arquivos?
+            </li>
+                <ul>
+                    <li>Method get.</li>
+                </ul>
+ </body>
+</html>
