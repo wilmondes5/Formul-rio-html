@@ -1,52 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário HTML</title>
-</head>
-<body> 
+    <title>index.html</title>
     <style>
-        fieldset {
-            width: 300px;
-            
-        }
         body {
-            background-color: cornsilk;
+            background-color:cornsilk
         }
-        fieldset {
-            background-color: white;
+        ul {
+            list-style-type: disc;
         }
-    </style>  
-    <center><fieldset>
-        <legend>Formulário</legend>
-    <form method="post" name="formulario" action="formulario.html">
+    </style>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <p>clique <a href="file:///C:/Users/wilmo/OneDrive/%C3%81rea%20de%20Trabalho/Formul-rio-html/formulario.html">  aqui </a> para ir para a página do formulário</p>
+    <center> <table border="1"><center>
+        <tr>
+            <th colspan="2">Integrantes do grupo</th>
+        </tr>
+        <tr>
+            <td>Maria Vitória Jusus Nascimento</td>
+            <td>Wilmondes Gabriel Teixeira Alves</td>
+        </tr>
+    </table></center>
+    <ol type="A">
+        <li>Na tag input com atributo type="text", para que serve o atributo "placeholder"?<br></li>
+            <ul>
+                <li>O placeholder serve de marcador de posição</li>
+            </ul>
+        <li>Na tag input com atributo type="radio" ou type="radio", para que serve o atributo "checked"?<br></li>
+            <ul>
+                 <li>Representa todos os botões de rádio na página que estão ativos</li>        
+            </ul>
+        <li>Na tag input para que serve o atributo "value"?<br></li>
+            <ul>
+              <li>atributo value para definir o valor a ser enviado por este item.</li>
+            </ul>
+        <li>Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um deles fique marcado de cada vez?<br></li>
+            <ul>
+                <li> type="radio"</li>
+            </ul>
+        <li>Para que serve a tag label? Para que serve o atributo "for" nessa tag?<br></li>
+            <ul>
+                <li> representa uma legenda para um item em uma interface de usuário. Ele pode estar associado com um elemento de controle, colocando este dentro do elemento label , ou usando o atributo for . Tal controle é chamado o controle etiquetado do elemento etiqueta.</li>
+            </ul>
+        <li>Na tag option> para que serve o atributo "selected"?<br></li>
+            <ul>
+                <li>O selectedatributo é um atributo booleano.Quando presente, especifica que uma opção deve ser pré-selecionada quando a página for carregada.A opção pré-selecionada será exibida primeiro na lista suspensa.</li>
+            </ul>
         
-        Nome:<input type="text" name="nome"><br>
-        Data de Nascimento:<input type="date" name="dataNascimento"><br>
-        Sexo:
-        <input type="radio" name="sexo" value="m">Masc</input>
-        <input type="radio" name="sexo" value="f">Fem</input>
-        <input type="radio" name="sexo" value="pnd">Prefiro não informar</input><br>
-        Endereço:<input type="text" name="endereco"><br>
-        Logradouro:<input type="text" name="logradouro"><br>
-        Bairro:<input type="text" name="bairro"><br>
-        Cidade:<input type="text" name="cidade"><br>
-        UF:
-            <select name="uf">
-                <option value="df">DF</option>
-                <option value="bh">BA</option>
-                <option value="mg">MG</option>
-                <option value="mt">MT</option>
-                <option value="ms">MS</option>
-            </select><br>    
-        E-mail:<input type="email" name="email"><br>
-       
-        <p><input type="submit" name="enviar" value="Enviar">
-        <input type="reset" name="limpar" value="Limpar">
-        </p>
-    </form>
-</fieldset> </center>
- </body>
+
+
+
+
+
+
+    
+            <li>
+               Nas tags de formulário para que serve o atributo "required"?            
+                   <ul>
+                       <li>Esse é um atributo booleano usado para indicar que um 
+                       campo de formulário é obrigatório para o envio do mesmo. 
+                      Ao adicionar esse atributo a um campo de formulário, o 
+                      navegador obriga o usuário a inserir dados naquele campo 
+                      antes de enviar o formulário.</li>
+                   </ul>    
+               </li>                 
+           <br>
+               <li>
+                     Na tag <"form"> para que serve o atributo "action"?
+               </li> 
+                   <ul>
+                       <li>O atributo action define o local (através de uma URL) 
+                           ao qual serão enviados todos os dados recolhidos do formulário.</li>
+                   </ul>
+           <br>
+               <li>
+                   Na tag <"form"> para que serve o atributo "method"?
+               </li>
+                   <ul>                   
+                       <li> O  método HTTP que o navegador usa para enviar o formulário. Os valores possíveis são:<br>                       
+                       post: Corresponde ao método HTTP POST ; os dados do formulário são incluídos no corpo do 
+                       formulário e enviados ao servidor.<br>
+                       get: Corresponde ao método HTTP GET ; os dados do formulário são anexados ao actionatributo 
+                       URI, com um '?' como separador e o URI resultante é enviado ao servidor. Use este método 
+                       quando o formulário não tiver efeitos colaterais e contiver apenas caracteres ASCII.</li>
+                   </ul>
+           <br>
+               <li>
+                   Para que o valor digitado de uma senha não apareça na 
+                   barra de endereços do navegador, qual deve ser o valor do 
+                   atributo "method" na tag <"form">?
+               </li>
+                   <ul>
+                       <li>Method post.</li>
+                   </ul>
+           <br>
+               <li>
+                   Qual valor deve ser informado no atributo "method" na tag <form> em um formulário que será
+                   usado para fazer upload de arquivos?
+               </li>
+                   <ul>
+                       <li>Method get.</li>
+                   </ul>
+    </ol>               
+</body>
 </html>
